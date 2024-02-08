@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --color1: white;
+  --color2: black;
+  --buch: dodgerblue;
+}
+header {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--color1);
+  background-color: var(--color2);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+h3 {
+  padding: 2rem;
+  border-top: 5px solid black;
+}
+
+main div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 3px solid red;
+}
+
+.Buch {
+  padding: 1rem;
+  margin: 1rem;
+  border: 5px solid black;
+  border-radius: 1rem;
+  background-color: var(--buch);
+}
+
+.Yoga {
+  --buch: Lightsalmon;
+}
+
+.Training-Rad {
+  --buch: khaki;
+}
+
+.Essstörungen {
+  --buch: orange;
+}
+
+.Selbstliebe {
+  --buch: LightYellow;
+}
+
+.finanzielle-Freiheit {
+  --buch: silver;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
