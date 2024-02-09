@@ -27,6 +27,7 @@ h2 {
 
 h3 {
   padding: 2rem;
+  font-size: 2rem;
   border-top: 5px solid black;
 }
 
@@ -39,7 +40,6 @@ main {
 main div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 3px solid red;
   margin-bottom: 2rem;
 }
 
@@ -64,6 +64,7 @@ main div {
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .cover {
@@ -117,7 +118,6 @@ footer {
   main div {
     display: grid;
     grid-template-columns: 1fr;
-    border: 3px solid green;
   }
   .cover {
     width: 150px;
