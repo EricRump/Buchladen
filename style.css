@@ -6,6 +6,7 @@ html {
   --color3: gainsboro;
   --buch: yellowgreen;
 }
+
 header {
   text-align: center;
   font-size: 2rem;
@@ -19,6 +20,9 @@ h2 {
   text-align: center;
   font-size: 2rem;
   padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(var(--color3), var(--color1));
 }
 
 h3 {
@@ -26,9 +30,15 @@ h3 {
   border-top: 5px solid black;
 }
 
+main {
+  background-image: linear-gradient(var(--color3), var(--color1));
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
 main div {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   border: 3px solid red;
   margin-bottom: 2rem;
 }
@@ -39,10 +49,36 @@ main div {
   border: 5px solid black;
   border-radius: 1rem;
   background-color: var(--buch);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "a a"
+    "b c";
+}
+
+.titel {
+  grid-area: a;
+  background-image: linear-gradient(var(--color3), var(--color1));
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+  grid-area: b;
+}
+
+.beschreibung {
+  grid-area: c;
+  margin: 1rem;
 }
 
 .Yoga {
-  --buch: Lightsalmon;
+  --buch: tomato;
 }
 
 .Training-Rad {
@@ -61,7 +97,12 @@ main div {
   --buch: silver;
 }
 
+.Krypto {
+  --buch: turquoise;
+}
+
 footer {
+  margin: 2rem;
   display: grid;
   grid-template-columns: 20% 1fr;
 }
@@ -70,4 +111,19 @@ footer {
   padding: 1rem;
   background-color: var(--color3);
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  main div {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 3px solid green;
+  }
+  .cover {
+    width: 150px;
+  }
+  .Buch {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
 }
